@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PanSdk'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'SDK para mostrar logo y formulario PAN'
   s.description      = 'Este SDK muestra una pantalla con un logo y un formulario de tarjeta de manera nativa.'
   s.homepage         = 'https://github.com/JuanRodriguezL/PanSdk'
