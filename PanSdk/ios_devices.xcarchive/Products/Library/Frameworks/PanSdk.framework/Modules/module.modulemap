@@ -1,0 +1,6 @@
+framework module PanSdk {
+  umbrella header "PanSdk.h"
+  export *
+
+  module * { export * }
+}
