@@ -37,6 +37,8 @@ public class HelloViewController: UIViewController {
 
     @objc func openPanForm() {
         let vc = PanFormViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .formSheet // o .fullScreen si prefieres
+        self.present(vc, animated: true, completion: nil)
     }
+
 }

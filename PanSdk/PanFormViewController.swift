@@ -7,6 +7,13 @@ public class PanFormViewController: UIViewController {
         view.backgroundColor = .white
         title = "Formulario PAN"
         setupUI()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Cerrar",
+            style: .plain,
+            target: self,
+            action: #selector(closeForm)
+        )
     }
 
     private func setupUI() {
@@ -85,5 +92,9 @@ public class PanFormViewController: UIViewController {
         let alert = UIAlertController(title: "Enviado", message: "Formulario enviado correctamente", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cerrar", style: .default))
         present(alert, animated: true)
+    }
+    
+    @objc private func closeForm() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
